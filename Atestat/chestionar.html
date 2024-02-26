@@ -1,0 +1,235 @@
+﻿<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Test</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon1.jpg">
+    <style type="text/css">
+
+        #navigate a {
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-size: 15pt;
+            font-weight: bold;
+            text-decoration: none;
+            color: #FACF5A;
+            margin-left: 15%
+        }
+
+            #navigate a:hover {
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-size: 17pt;
+                font-weight: bold;
+                text-decoration: none;
+                color: #FEFBF3;
+                margin-left: 10%
+            }
+
+        #th, td {
+            border: none;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-family: 'Ink Free';
+            font-style: normal;
+            font-size: 40pt;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-family: 'Segoe Script';
+            font-style: normal;
+            font-size: 22pt;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+            color: #FACF5A;
+        }
+
+        p {
+            font-family: Verdana;
+            font-style: normal;
+            font-size: 12pt;
+            font-weight: normal;
+            text-align: left;
+            text-indent: 2em;
+            margin-left: 20px;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+
+        .container {
+            color: #ffffff;
+            font-family: Verdana;
+            width: 90%;
+            padding: 30px;
+            margin-left:20px;
+            font-size: 20px;
+            display: none;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        button {
+            font-size:20px;
+            margin-top: 18px;
+            color: darkcyan;
+            font-family: 'Segoe Script';
+            font-weight:bolder;
+        }
+
+    </style>
+
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginheight="0" marginwidth="0" bgcolor="#181818">
+    <a name="begin"></a>
+
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%"><h1 align="center"> Michael Jackson </h1></td>
+        </tr>
+    </table>
+
+    <table border="0" height="75%" width="98%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="200px" bgcolor="181818" valign="middle">
+
+                <table ID="navigate" cellpadding="0" cellspacing="0" border="0">
+
+                    <tr>
+                        <td STYLE="height: 40px"><a href="index.html">Acasă</a></td>
+                    </tr>
+                    <tr>
+                        <td STYLE="height: 40px"><a href="biografie.html">Biografie</a></td>
+                    </tr>
+                    <tr>
+                        <td STYLE="height: 40px"><a href="discografie.html">Discografie</a></td>
+                    </tr>
+                    <tr>
+                        <td STYLE="height: 40px"><a href="chestionar.html">Test</a></td>
+                    </tr>
+                    <tr>
+                        <td STYLE="height: 40px"><a href="bibliografie.html">Bibliografie</a></td>
+                    </tr>
+
+
+                </table><br>
+            </td>
+
+            <td valign="middle" bgcolor="#0c2438">
+
+                <table border="0" width="100%" cellspacing="0" cellpadding="0">
+
+                    <tr>
+                        <td>
+
+                            <p><h2>Test - Câte cunoștințe ai acumulat?</h2></p>
+
+                            <div class="container">
+                                În ce an a murit Michael Jackson?<hr>
+                                <input type="radio" name="question1">1918<br>
+                                <input type="radio" name="question1">2009<br>
+                                <input type="radio" name="question1" id="correct1">Michael Jackson este nemuritor<br>
+                                <input type="radio" name="question1">2003<br>
+                                <button class="next" onclick="next(1)">NEXT</button>
+                            </div>
+
+                            <div class="container">
+                                Ce rol a avut Michael Jackson în musicalul The Wiz?<hr>
+                                <input type="radio" name="question2">Omul de Tinichea<br>
+                                <input type="radio" name="question2">Mătușa Em<br>
+                                <input type="radio" name="question2" id="correct2">Sperietoarea<br>
+                                <input type="radio" name="question2">Vrăjitorul din Oz<br>
+                                <button class="next" onclick="next(2)">NEXT</button>
+                            </div>
+
+                            <div class="container">
+                                Ce nume avea cimpanzeul său?<hr>
+                                <input type="radio" name="question3">Gheorghe<br>
+                                <input type="radio" name="question3">Martin<br>
+                                <input type="radio" name="question3">Ana<br>
+                                <input type="radio" name="question3" id="correct3">Bubbles<br>
+                                <button onclick="next(3)">NEXT</button>
+                            </div>
+
+                            <div class="container">
+                                Care este o altă pasiune a cântărețului?<hr>
+                                <input type="radio" name="question4">Pictură<br>
+                                <input type="radio" name="question4">Minigolf<br>
+                                <input type="radio" name="question4" id="correct4">Dans<br>
+                                <input type="radio" name="question4">Gătit<br>
+                                <button class="next" onclick="next(4)">NEXT</button>
+                            </div>
+
+                            <div class="container">
+                                Care este renumele său?<hr>
+                                <input type="radio" name="question5" id="correct5">Regele muzicii Pop<br>
+                                <input type="radio" name="question5">Prințul de argint<br>
+                                <input type="radio" name="question5">Dumnezeu<br>
+                                <input type="radio" name="question5">Doar Michael Jackson<br>
+                                <button onclick="result()">REZULTAT</button>
+                            </div>
+                            <script>
+                                // displaying the first block of question
+                                document.getElementsByClassName('container')[0].style.display = "block";
+
+                                // DEFINING THE NEXT FUNCTION
+                                function next(id) {
+                                    document.getElementsByClassName('container')[id - 1].style.display = "none";
+                                    document.getElementsByClassName('container')[id].style.display = "block";
+                                }
+                                //getting final result
+                                function result() {
+                                    var score = 0;
+                                    if (document.getElementById('correct1').checked) {
+                                        score++;
+                                    }
+                                    if (document.getElementById('correct2').checked) {
+                                        score++;
+                                    }
+                                    if (document.getElementById('correct3').checked) {
+                                        score++;
+                                    }
+                                    if (document.getElementById('correct4').checked) {
+                                        score++;
+                                    }
+                                     if (document.getElementById('correct5').checked) {
+                                        score++;
+                                    }
+                                    alert("Scorul tău este: " + score);
+                                }
+                            </script>
+
+                        </td>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="100%" height="50"><p STYLE="font-family: Arial; font-style: normal; font-size: 10pt; font-weight: bold; text-align: right; margin-right: 30px; color: #ffffff"> © Radu Mihaela-Daniela </td>
+        </tr>
+    </table>
+
+</body>
+</html>
